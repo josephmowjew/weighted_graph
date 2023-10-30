@@ -25,3 +25,5 @@ destinationDistrict = "Nkhotakota"
 result = graph.FindShortestPath(sourceDistrict, destinationDistrict)
 Print("Shortest path:", result[index 0])
 Print("Path cost:", result[index 1])
+
+#expect the printed result to be 100
