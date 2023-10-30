@@ -15,3 +15,12 @@ class WeightedGraph:
         except nx.NetworkXNoPath:
             return None
 
+weighted_graph = WeightedGraph()
+weighted_graph.add_edge("Dedza", "Lilongwe", 40)
+weighted_graph.add_edge("Lilongwe", "Nkhotakota", 60)
+
+source_district = "Dedza"
+destination_district = "Nkhotakota"
+result = weighted_graph.shortest_path(source_district, destination_district)
+print("Shortest path:", result[0])
+print("Path cost:", result[1])
