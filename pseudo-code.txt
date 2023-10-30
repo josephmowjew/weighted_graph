@@ -1,0 +1,27 @@
+# Create a WeightedGraph
+WeightedGraph:
+    # Initialize an empty graph
+    InitializeGraph()
+
+    # Add an edge with a weight
+    AddEdge(node1, node2, weight)
+
+    # Find the shortest path and its cost
+    FindShortestPath(source, destination)
+
+# Instantiate a weighted graph object
+graph = New WeightedGraph()
+
+# Add edges with weights to the graph
+graph.AddEdge("Dedza", "Lilongwe", 40)
+graph.AddEdge("Lilongwe", "Nkhotakota", 60)
+# Add more edges as needed
+
+# Specify the source and destination nodes
+sourceDistrict = "Dedza"
+destinationDistrict = "Nkhotakota"
+
+# Calculate and print the shortest path and its cost
+result = graph.FindShortestPath(sourceDistrict, destinationDistrict)
+Print("Shortest path:", result[index 0])
+Print("Path cost:", result[index 1])
