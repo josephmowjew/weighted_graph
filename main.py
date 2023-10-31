@@ -63,8 +63,8 @@ weighted_graph.add_edge("Dowa", "Kasungu", 117)
 # Add more edges as needed
 
 # Specify the source and destination nodes
-source_district = "Lilongwe"
-destination_district = "Nkhotakota"
+source_district = "Mchinji"
+destination_district = "Kasungu"
 
 # Calculate and print the shortest path and its cost
 result = weighted_graph.shortest_path(source_district, destination_district)
